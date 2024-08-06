@@ -1,16 +1,40 @@
-# todo_task_management
+# Todo Task Management App
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+The Todo Task Management App is a Flutter application that allows users to manage their tasks efficiently. The application supports adding, editing, deleting, and viewing tasks. It uses Riverpod for state management, integrates with Firebase for backend services. The UI is designed to be responsive and adapts to various screen sizes.
 
-This project is a starting point for a Flutter application.
+## Technologies
 
-A few resources to get you started if this is your first Flutter project:
+-   Clean Architecture
+-   Navigation (GoRouter)
+-   State Management (Riverpod)
+-   Firebase
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Clean Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The project uses Clean Architecture to ensure a modular and maintainable codebase. It separates the application into distinct layers: Presentation, Domain, and Data, which helps in managing complexity and enhancing scalability.
+
+
+## Features
+
+-   **Add Tasks**: Users can add new tasks to their list.
+-   **Edit Tasks**: Users can update the details of existing tasks.
+-   **Delete Tasks**: Users can remove tasks from their list.
+-   **Mark Tasks as Completed**: Users can toggle the completion status of tasks.
+-   **View Task Details**: Users can view detailed information about a specific task.
+
+## How It Works
+
+1. **State Management**: The application uses Riverpod for managing the state of tasks. Providers are used to handle asynchronous operations and state updates.
+2. **Firebase Integration**: Firebase is used for backend services. Tasks are stored and managed in a Firebase database.
+
+3. **Responsive Design**: The `screenutil` package is used to adapt the UI to various screen sizes, ensuring a consistent user experience across devices.
+
+## Improvement Suggestions
+
+1. **User Authentication**: Implement user authentication to allow multiple users to manage their own tasks.
+2. **Task Categories**: Add support for task categories or tags to help users organize their tasks better.
+3. **Push Notifications**: Integrate push notifications to remind users of upcoming or overdue tasks.
+4. **Search Functionality**: Implement a search feature to help users quickly find specific tasks.
+5. **Task Priority**: Add a priority feature to allow users to mark tasks as high, medium, or low priority.
